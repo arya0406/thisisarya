@@ -41,11 +41,10 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
     </Button>
   );
 
-  // Fonction qui utilise window.location pour forcer un rechargement complet
+  // Handle contact action - for now just close the modal
   const handleContactMe = () => {
     setIsOpen(false);
-    // Forcer un rechargement complet de la page avec la requête
-    window.location.href = '/chat?query=How%20can%20I%20contact%20you%3F';
+    // You can add your contact logic here
   };
 
   return (
@@ -127,7 +126,7 @@ export default function WelcomeModal({ trigger }: WelcomeModalProps) {
                 className="h-auto rounded-full px-4 py-3"
                 size="sm"
               >
-                Start Chatting
+                Explore Portfolio
               </Button>
               <div
                 className="mt-6 flex cursor-pointer flex-wrap gap-1 text-center text-sm"
